@@ -1,0 +1,11 @@
+TAREFA 1
+
+"gemini-2.5-flash-preview-04-17"
+
+TAREFA 2
+
+model_response = generate_gemini_response(user_prompt)
+
+TAREFA 3
+
+apiEndpoint: 'http://127.0.0.1:8080/generate',
