@@ -5,6 +5,7 @@ TAREFA 1
 TAREFA 2
 
 model_response = generate_gemini_response(user_prompt)
+return jsonify({"response": model_response})
 
 TAREFA 3
 

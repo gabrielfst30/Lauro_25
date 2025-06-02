@@ -10,17 +10,17 @@ from google import genai
 from google.genai import types
 
 
-def generate(entrada:str):
+def generate():
     client = genai.Client(
         api_key=os.environ.get("GEMINI_API_KEY"),
     )
-    # TAREFA 1: escolher o modelo apropriado
+    # TAREFA 1: escolher o modelo apropriado e ajustar entrada do usuário
 
     contents = [
         types.Content(
             role="user",
             parts=[
-                types.Part.from_text(text=entrada),
+                types.Part.from_text(text="ENTER_INPUT_HERE"),
             ],
         ),
     ]
