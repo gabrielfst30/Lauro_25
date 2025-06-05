@@ -14,33 +14,8 @@ def generate():
     client = genai.Client(
         api_key=os.environ.get("GEMINI_API_KEY"),
     )
-    # TAREFA 1: escolher o modelo apropriado e ajustar entrada do usuário
+    # TAREFA 1: escolher o modelo apropriado e ajustar entrada do usuário e retorno da função
 
-    contents = [
-        types.Content(
-            role="user",
-            parts=[
-                types.Part.from_text(text="ENTER_INPUT_HERE"),
-            ],
-        ),
-    ]
-    tools = [
-        types.Tool(google_search=types.GoogleSearch()), # O modelo usa Google Search como Ferramenta adicional
-    ]
-    generate_content_config = types.GenerateContentConfig(
-        tools=tools,
-        response_mime_type="text/plain",
-    )
-
-    resposta=""
-
-    for chunk in client.models.generate_content_stream(
-        model=model,
-        contents=contents,
-        config=generate_content_config,
-    ):
-        resposta+=chunk.text
-    return resposta
 
 #if __name__ == "__main__":
 #    # Teste para ter certeza que funciona
