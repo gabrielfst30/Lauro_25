@@ -53,6 +53,7 @@ Agora que seu ambiente está configurado, você deve completar as seguintes tare
 - Selecione o modelo mais adequado para o projeto
 - Anote as configurações e parâmetros do modelo escolhido
 - Use Google Search como ferramenta do modelo
+- Adicione a função em `gemini_chat.py` e configure o retorno de output
 
 ### Tarefa 2: Ajustar model_response em app.py
 
