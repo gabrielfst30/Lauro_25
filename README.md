@@ -35,7 +35,15 @@ Bem-vindos ao Workshop de Desenvolvimento! Este guia irá orientá-los através 
 4. Após a instalação, feche e reabra o terminal do VS Code
 5. Teste a instalação digitando `python --version`
 
-### 5. Instalar Dependências das Bibliotecas
+### 5. Criar e Ativar Ambiente Python
+
+1. No terminal do VS Code que você acabou de abrir, digite:
+   ```bash
+   python -m venv chat-env
+   . chat-env/bin/activate
+   ```
+
+### 6. Instalar Dependências das Bibliotecas
 
 1. No terminal do VS Code que você acabou de abrir, digite:
    ```bash
